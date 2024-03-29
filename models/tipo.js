@@ -4,6 +4,7 @@ const TipoSchema = Schema ({
     nombre:{
         type: String,
         required: [true, 'Nombre requerido'],
+        unique: [true, 'Nombre ya existente'],
         minLength: 2
     },
     estado: {
