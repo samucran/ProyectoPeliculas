@@ -17,11 +17,13 @@ const generos = require('./routes/generoRoute')
 const directores = require('./routes/directorRoute')
 const productoras = require('./routes/productoraRoute')
 const tipos = require('./routes/tipoRoute')
+const medias = require('./routes/mediaRoute')
 
 app.use('/api/v1/generos', generos)
 app.use('/api/v1/directores', directores)
 app.use('/api/v1/productoras', productoras)
 app.use('/api/v1/tipos', tipos)
+app.use('/api/v1/medias', medias)
 
 app.get("*", (req, res) => {
     return res.status(404).json({

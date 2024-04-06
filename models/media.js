@@ -36,7 +36,7 @@ const MediaSchema = Schema ({
         type: Date
     },
     fechaEstreno: {
-        type: Date
+        type: String
     },
     genero: {
         type: Schema.Types.ObjectId,
