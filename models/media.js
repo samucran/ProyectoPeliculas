@@ -7,6 +7,11 @@ const MediaSchema = Schema ({
         unique: [true, 'Serial ya existente'],
         minLength: 2
     },
+    estado: {
+        type: Boolean,
+        default: true,
+        required: true
+    },
     titulo:{
         type: String,
         required: [true, 'Titulo requerido'],
